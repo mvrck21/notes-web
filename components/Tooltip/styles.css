@@ -1,0 +1,21 @@
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  display: none; /* Hide tooltip initially */
+  transform: translate(-50%, -100%); /* Center horizontally, position above */
+  z-index: 1000;
+}
+
+.tooltip-arrow {
+  border-top: 8px solid #368ec5;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  position: absolute;
+  bottom: -8px;
+  left: calc(50% - 8px);
+}

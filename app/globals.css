@@ -17,17 +17,62 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background-color: rgb(38 38 38);
+  color: rgb(229 229 229);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.ql-toolbar .ql-stroke {
+  fill: none;
+  stroke: #fff !important;
+}
+
+.ql-toolbar .ql-fill {
+  fill: #fff !important;
+  stroke: none;
+}
+
+/* .ql-toolbar .ql-fill:hover {
+  fill: cadetblue !important;
+  stroke: none;
+} */
+
+.ql-toolbar button {
+  border: 1px solid white !important;
+  /* background-color: coral !important; */
+  color: #fff;
+}
+
+.ql-toolbar .ql-picker {
+  color: #fff !important;
+}
+
+/* .ql-noteLink:before {
+  content: '<i class="fa fa-bold" aria-hidden="true"></i>';
+} */
+
+.ql-editor {
+  /* color: #fff !important; */
+  font-size: 18px; /* 1.125rem*/
+  line-height: 28px; /* 1.75rem */
+  text-align: justify !important;
+  padding: 16px !important;
+
+  max-height: 24rem; /* 384px */
+}
+
+.web-node {
+  cursor: pointer;
 }
